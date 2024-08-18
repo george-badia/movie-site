@@ -1,0 +1,52 @@
+
+/* .tv-series {
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+  } */
+  
+  /* .tv-series h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-weight: bold;
+  } */
+  
+  .tv-series {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--MALIBU-SUN);
+  padding: 20px;
+}
+
+.header {
+  background-color: var(--WOODSY-BROWN);
+  padding: 20px;
+}
+
+.header h1 {
+  color: var(--MALIBU-SUN);
+  font-size: 2.5rem;
+}
+  .series-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  @media (max-width: 1200px) {
+    .series-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .series-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .series-grid {
+      grid-template-columns: 1fr;
+    }
+  }

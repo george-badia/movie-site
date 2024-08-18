@@ -1,0 +1,142 @@
+
+ :root {
+  --WOODSY-BROWN: #36251B;
+  --RICH-RED: #9C441F;
+  --FINCH: #646544;
+  --MALIBU-SUN: #FFF3DA;
+  --VELVET-FOREST: #1E3226;
+  --WHITE: #FFFFFF;
+  --BLACK: #000000;
+  --SILVER: #C0C0C0;
+  --GARNET: #76290B;
+  --COPPER: #C27E35;
+  --MUSTARD: #CCB363;
+  --EGG-NOG: #FBEDC3;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.auth-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.auth-image {
+  flex: 1;
+  background-image: url('https://img.freepik.com/free-vector/movie-time-cinema-film-strip-background_1017-36653.jpg?size=626&ext=jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: var(--MALIBU-SUN);
+}
+
+.auth-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--MALIBU-SUN);
+  padding: 40px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container {
+  max-width: 400px;
+  width: 100%;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: var(--VELVET-FOREST);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login-error {
+  color: var(--RICH-RED);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  color: var(--VELVET-FOREST);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+  font-size: 1.6rem;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid var(--SILVER);
+  border-radius: 4px;
+  width: 100%;
+  background-color: var(--WHITE);
+}
+
+.pass-input-div {
+  position: relative;
+}
+
+.pass-input-div input {
+  padding-right: 40px;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: var(--SILVER);
+}
+
+button[type="submit"], .toggle-auth {
+  background-color: var(--WOODSY-BROWN);
+  color: var(--WHITE);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover, .toggle-auth:hover {
+  background-color: var(--RICH-RED);
+}
+
+.toggle-auth {
+  background-color: transparent;
+  border: 1px solid var(--WOODSY-BROWN);
+  color: var(--WOODSY-BROWN);
+  margin-top: 20px;
+}
+
+.toggle-auth:hover {
+  background-color: var(--WOODSY-BROWN);
+  color: var(--WHITE);
+}
+
+.SignUp-info {
+  color: var(--BLACK);
+  text-align: center;
+  margin-top: 20px;
+  border: 1px solid var(--SILVER);
+  padding: 10px;
+  border-radius: 4px;
+  background-color: var(--FINCH);
+}

@@ -1,0 +1,84 @@
+/* .movie-poster {
+  width: 200px;
+  text-align: center;
+}
+
+.movie-poster img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.movie-poster h2 {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.ticket-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.ticket-button:hover {
+  background-color: #76290B;
+} */
+ /* Posters.css */
+.movie-poster {
+  background-color: var(--WHITE);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-poster:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.movie-poster img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid var(--FINCH);
+}
+
+.movie-poster h2 {
+  font-size: 1.2em;
+  color: var(--WOODSY-BROWN);
+  margin: 10px 0;
+}
+
+.ticket-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.ticket-button {
+  background-color: var(--RICH-RED);
+  color: var(--WHITE);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.ticket-button:hover {
+  background-color: var(--GARNET);
+}
+
+.price {
+  font-size: 1em;
+  color: var(--RICH-RED);
+}

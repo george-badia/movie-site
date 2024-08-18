@@ -1,0 +1,64 @@
+/* .Movie {
+    text-align: center;
+}
+
+.poster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+    padding: 20px;
+} */
+ /* Movie.css */
+.Movie {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--MALIBU-SUN);
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2em;
+    color: var(--WOODSY-BROWN);
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .poster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .poster {
+    background-color: var(--WHITE);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .poster img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid var(--FINCH);
+  }
+  
+  .poster-title {
+    font-size: 1.2em;
+    color: var(--WOODSY-BROWN);
+    margin: 10px 0;
+  }
+  
+  .poster-price {
+    font-size: 1em;
+    color: var(--RICH-RED);
+    margin-bottom: 10px;
+  }
+  

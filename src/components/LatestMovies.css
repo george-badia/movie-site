@@ -1,0 +1,184 @@
+/* .MoviesGrid{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 20px;
+    padding: 20px;
+}
+.MovieBox {
+    width: 430px;
+    height: 300px;
+    position: relative;
+    border-left: 5px solid transparent;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .MovieBox:hover {
+    cursor: pointer;
+    border-left: 5px solid #e50813;
+    transform: scale(1.1) translateX(6%);
+    box-shadow: 0 0 0.75em rgba(0, 0, 0, 0.9);
+  }
+  
+  .MovieBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(20, 20, 20, 0.4) 50%,
+      rgba(83, 100, 141, 0) 100%
+    );
+    z-index: -1;
+  }
+  
+  .MovieBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+  }
+  
+  .MovieBox .text {
+    position: relative;
+    padding: 70px 50px;
+    color: white;
+  }
+  
+  .MovieBox h3 {
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .MovieBox button.primary-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #e50813;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .MovieBox button.primary-btn i {
+    margin-right: 10px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .MovieBox {
+      width: 320px;
+      height: 250px;
+    }
+  } */.MoviesGrid {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: minmax(300px, auto);
+    gap: 20px;
+    padding: 20px;
+}
+
+.MovieBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-left: 5px solid transparent;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.MovieBox:hover {
+    cursor: pointer;
+    border-left: 5px solid #e50813;
+    transform: scale(1.05) translateX(2%);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+}
+
+.MovieBox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(20, 20, 20, 0.4) 50%,
+      rgba(83, 100, 141, 0) 100%
+    );
+    z-index: 1;
+}
+
+.MovieBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.MovieBox .text {
+    position: relative;
+    padding: 20px;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+
+.MovieBox h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.MovieBox span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.MovieBox button.primary-btn {
+    margin-top: 15px;
+    padding: 12px 20px;
+    font-size: 13px;
+    cursor: pointer;
+    background-color: #e50813;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.MovieBox button.primary-btn i {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .MoviesGrid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 10px;
+    }
+
+    .MovieBox {
+        height: auto;
+    }
+}
