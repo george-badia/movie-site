@@ -29,6 +29,12 @@
       "email": "ADM@QWE",
       "password": "2345",
       "id": 5
+    },
+    {
+      "name": "george",
+      "email": "jojo@dev",
+      "password": "1234",
+      "id": 6
     }
   ]
 }

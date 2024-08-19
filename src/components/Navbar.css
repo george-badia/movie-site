@@ -192,3 +192,67 @@ padding-top: 10px;
     font-size: 1rem;
     font-weight: 400;
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo a {
+        font-size: 14px;
+    }
+
+    .navbar ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border: none;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .searchbox {
+        width: 100%;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .searchbox input {
+        width: 80%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a {
+        font-size: 12px;
+    }
+
+    .navbar ul li a {
+        font-size: 12px;
+    }
+
+    .searchbox input {
+        width: 100%;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
